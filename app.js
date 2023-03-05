@@ -13,8 +13,6 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-const items = ["Buy Food", "Cook Food", "Eat Food"];
-const workItems = [];
 let day = "";
 mongoose.connect(
   "mongodb+srv://taliazwennis:Test123@cluster0.tflix2w.mongodb.net/todolistDB"
